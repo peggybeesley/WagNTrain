@@ -9,11 +9,12 @@
     <title>Wag-N-Train Blog</title>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
 </head>
 
 <body>
     <header class="header">
-        <h1 class="header__h1">Wag-N-Train Blog</h1>
+        <h1 class="header__h1">Wag-N-Train Pet Sitting</h1>
         <nav class="header__nav">
             <ul class="header__ul">
                 <li>
@@ -23,11 +24,12 @@
                     <a href="index.html#prices">Prices</a>
                 </li>
                 <li>
-                    <a href="contact.html">Contact</a>
+                    <a href="about.html">About Us</a>
                 </li>
                 <li>
-                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
                 </li>
+
             </ul>
         </nav>
     </header>
@@ -35,23 +37,29 @@
     <figure>
         <img src="img/wagNTrain1029x667.png" alt="WagNTrain" title="We Love Pets" width="1029"
             height="667">
-         <figcaption class="offscreeen">
+         <figcaption class="offscreen">
             Wag-N-Train Header
          </figcaption>
     </figure>
     </section>
-    <main>
-        <p>
-           <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FWagNTrainJJ&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+    <main class="main">
+        <article class="main__article">
+            <h2>Our Blog</h2>
+            <p class="main__article_blog">
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FWagNTrainJJ&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+
         </p>
 
-        <p>
-            <a href="#">Back To Top</a>
-        </p>
+            <p class="main__article_blog">
+                <a href="#">Back To Top</a>
+            </p>
+        </article>
     </main>
-    <hr>
-    <footer>
-        <p>Copyright &copy; Wag-N-Train Pet Sitting</p>
+    <footer class="footer">
+        <p>
+            <span class="nowrap">Copyright &copy; <time id="year"></time></span>
+            <span class="nowrap">Wag-N-Train Pet Sitting</span>
+        </p>
     </footer>
 </body>
 

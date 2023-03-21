@@ -52,6 +52,7 @@ input, button, textarea{
 
     /* BORDERS */
     --BORDERS: 1px solid var(--BORDER-COLOR);
+    --BORDER-RADIUS: 15px;
 
     /* STANDARD PADDING */
     --PADDING-TOPBOTTOM: 0.25em;
@@ -186,4 +187,133 @@ a:active{
         transform: skew(-10deg, -5deg);
         scaleY(1);
     }
+}
+/* || FOOTER */
+
+.footer {
+    position: sticky;
+    bottom: 0;
+    background-color: var(--HEADER-BGCOLOR);
+    color: var(--HEADER-COLOR);
+    padding: var(--PADDING-TOPBOTTOM) var(--PADDING-SIDES);
+    text-align: center;
+}
+
+/* || MAIN */
+.main{
+    padding: var(--PADDING-TOPBOTTOM) var(--PADDING-SIDES);
+}
+.main__article{
+    scroll-margin-top: 6.5rem;
+    margin: var(--MARGIN);
+}
+
+.main__article:first-child{
+    margin-top: 1em;
+}
+
+.main__article:last-child{
+    min-height: calc(100vh - 20rem);
+}
+
+/* || ABOUT */
+.about__bio{
+    margin: var(--MARGIN);
+}
+
+.about__bio-answer{
+    margin-top: 1em ;
+}
+
+/* || CONTACT */
+.contact__h2{
+    margin: 0;
+}
+
+.contact__fieldset{
+    border: none;
+}
+
+.contact__p{
+    margin: 1em 0;
+}
+
+.contact__label{
+    display: block;
+    font-weight: bold;
+}
+
+.contact__input, .contact__textarea{
+    padding: 0.5em;
+    border-radius: var(--BORDER-RADIUS);
+    border-width: 2px;
+    width: 100%;
+}
+
+.contact__button{
+    padding: 0.5em;
+    border-radius: var(--BORDER-RADIUS);
+    background-color: var(--HIGHLIGHT-COLOR);
+    color: var(--HEADER-COLOR);
+}
+
+/* || PRICES */
+thead, tbody, tfoot, tr{
+    display: contents;
+}
+
+.prices__container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "hd1 hd2"
+    "hs hsp"
+    "ps psp"
+    "as as";
+
+    gap: 0.1em;
+    margin-bottom: 1em;
+}
+
+.prices__hs{
+    grid-area: hs;
+}
+
+.prices__ps{
+    grid-area: ps;
+}
+
+.prices__as{
+    grid-area: as;
+   }
+
+.prices__hs, .prices__ps, .prices__as, .prices__header{
+    color: var(--HIGHLIGHT-COLOR);
+    font-weight: bold;
+    height: 100%;
+    display: grid;
+    place-content: center;
+}
+
+.prices__header{
+    border-bottom: var(--BORDERS);
+}
+
+
+.prices__header, .prices__item{
+    width: 100%;
+    padding: 0.5em;
+    /* border: medium ridge var(--BORDER-COLOR);*/
+}
+
+.prices__item{
+    display: grid;
+    place-content: center;
+}
+
+.main__article_blog{
+    display: grid;
+    place-content: center;
+    width: ;
+}
 }
