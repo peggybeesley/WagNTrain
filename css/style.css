@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 
 /* || CSS RESET */
 *, *::after, *::before{
@@ -20,9 +21,13 @@ input, button, textarea{
 /* || VARIABLES */
 
 :root{
-    /* FONTS */
+    /* FONTS
     --FF: "Nunito", sans-serif;
     --FF-HEADINGS: "Fugaz One", cursive;
+    --FS: clamp(1rem, 2.2vh, 1.5rem); */
+
+    --FF: "Nunito", sans-serif;
+    --FF-HEADINGS: "Dancing Script", cursive;
     --FS: clamp(1rem, 2.2vh, 1.5rem);
 
     /* COLORS */
